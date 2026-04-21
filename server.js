@@ -8,7 +8,7 @@ const app = express();
 app.get("/", (req, res) => {
   res.send("Servidor HTTPS funcionando 🔐");
 });
-
+// Uso de certificado SSL
 const options = {
   pfx: fs.readFileSync("cert.pfx"),
   passphrase: "1234"
